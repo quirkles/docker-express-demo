@@ -10,6 +10,8 @@ RUN npm run clean
 RUN npm run build
 RUN rm -rf src
 
+EXPOSE 3000
+
 COPY . .
 
 CMD ["npm", "start"]
